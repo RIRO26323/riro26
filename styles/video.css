@@ -1,0 +1,115 @@
+.AllGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 18px;
+  row-gap: 40px;
+}
+@media (max-width: 750px) {
+  .AllGrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 751px) and (min-width: 999px) {
+  .AllGrid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .AllGrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.thum1{
+ width: 100%;
+}
+
+.channel-picture{
+  margin-bottom: 7px;
+  position: relative;
+}
+.video-time{
+ position: absolute;
+ right: 4px;
+ bottom: 12px;
+ background-color: black;
+ color: white;
+ font-size: 12px;
+ font-weight: 500;
+ padding: 4px;
+}
+
+.Video-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.PF-picture{
+  width: 36px;
+  border-radius: 50px;
+  position: relative;
+}
+/* 
+ hold test css is here!
+*/
+.hold-pf{
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 8px 14px;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.profile-Picture:hover .hold-pf{
+  opacity: 1;
+}
+.hold-PF-picture{
+  width: 36px;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.hold-stats .authour-name{
+  font-size: 14px;
+  font-weight: 800;
+}
+.hold-stats .his-subscribers{
+  font-size: 12px;
+  color: #212529;
+}
+.video-info{
+  margin-right: 2px;
+}
+.video-title{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 9px;
+}
+.title-target{
+  text-decoration: none;
+  color: black;
+}
+.channel-name,.vd-stats{
+  font-size: 12px;
+  color: #212529;
+}
+.channel-name{
+  margin-bottom: 4px;
+}
+@media (min-width: 1000px){
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1000px) {
+  .channel-name,
+  .vd-stats{
+    font-size: 14px;
+  }
+}
